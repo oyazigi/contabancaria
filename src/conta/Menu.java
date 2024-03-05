@@ -1,6 +1,7 @@
 package conta;
 import java.util.Scanner;
 import conta.util.Cores;
+import conta.model.Conta;
 public class Menu {
 	public static void sobre() {
 		System.out.println(Cores.TEXT_GREEN  + Cores.ANSI_BLACK_BACKGROUND +
@@ -58,6 +59,13 @@ public class Menu {
 		}
 	}
 	public static void main(String[] args) {
-		mostrarMenu();
+		Conta a = new Conta(1, 123, 1, "Victor", 10000.0f);
+		a.visualizar();
+		a.Sacar(12000.0f);
+		a.Sacar(5000.0f);
+		a.Depositar(85000.0f);
+		a.visualizar();
+		
+		//mostrarMenu();
 	}
 }
