@@ -1,5 +1,6 @@
 package conta;
 import java.util.Scanner;
+import conta.model.*;
 import conta.util.Cores;
 import conta.model.Conta;
 public class Menu {
@@ -33,7 +34,6 @@ public class Menu {
 		op = scan.nextInt();
 		switch(op) {
 		case 1: 
-				System.out.println("TESTE");
 				break;
 			case 2:
 				break;
@@ -60,6 +60,7 @@ public class Menu {
 		}
 	}
 	public static void main(String[] args) {
+		//Testando Conta
 		Conta a = new Conta(1, 123, 1, "Victor", 10000.0f);
 		a.visualizar();
 		a.Sacar(12000.0f);
@@ -67,5 +68,19 @@ public class Menu {
 		a.Depositar(85000.0f);
 		a.visualizar();
 		//mostrarMenu();
+		
+		//Testando Conta Corrente
+		ContaCorrente b = new ContaCorrente(2, 123, 1, "Victor", 150000.0f, 1000.0f);
+		b.Sacar(45000.0f);
+		b.visualizar();
+		b.Depositar(100000.0f);
+		b.visualizar();
+		
+		//Testando Conta Poupança
+		ContaPoupanca c = new ContaPoupanca(2, 123, 1, "Victor", 150000.0f, 100);
+		b.Sacar(45000.0f);
+		b.visualizar();
+		b.Depositar(100000.0f);
+		b.visualizar();
 	}
 }
