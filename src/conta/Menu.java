@@ -33,6 +33,7 @@ public class Menu {
 		op = scan.nextInt();
 		switch(op) {
 		case 1: 
+				System.out.println("TESTE");
 				break;
 			case 2:
 				break;
@@ -65,7 +66,6 @@ public class Menu {
 		a.Sacar(5000.0f);
 		a.Depositar(85000.0f);
 		a.visualizar();
-		
 		//mostrarMenu();
 	}
 }
