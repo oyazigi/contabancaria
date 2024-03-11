@@ -60,14 +60,8 @@ public class Menu {
 		}
 	}
 	public static void main(String[] args) {
-		//Testando Conta
-		Conta a = new Conta(1, 123, 1, "Victor", 10000.0f);
-		a.visualizar();
-		a.Sacar(12000.0f);
-		a.Sacar(5000.0f);
-		a.Depositar(85000.0f);
-		a.visualizar();
-		//mostrarMenu();
+		
+		
 		
 		//Testando Conta Corrente
 		ContaCorrente b = new ContaCorrente(2, 123, 1, "Victor", 150000.0f, 1000.0f);

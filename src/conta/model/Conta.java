@@ -2,7 +2,7 @@ package conta.model;
 
 import conta.util.Cores;
 
-public class Conta {
+public abstract class Conta {
 	public int getNumero() {
 		return numero;
 	}
